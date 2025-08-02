@@ -1,0 +1,47 @@
+#rectangle{
+  height: 600px;
+  width: 200px;
+  background-color: rgb(175, 202, 175);
+}
+
+#circle1{
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}
+
+#circle2{
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}
+
+#circle3{
+  height: 150px;
+  width: 150px;
+  background-color: green;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}

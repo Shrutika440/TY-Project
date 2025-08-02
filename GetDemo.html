@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GetDemo.css">
+</head>
+<body>
+        <!-- <span class="close-btn">&times;</span> -->
+
+        <div class="overlay" id="popup">
+            <div class="form-container">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>Get Free Demo</h2>
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="text" placeholder="Phone no" required />
+                <input type="email" placeholder="Email" required />
+                
+                <button type="button" class="otp-btn">Send OTP</button>
+
+                <div class="otp-row">
+                    <input type="text" placeholder="Enter OTP" required />
+                    <button type="button" class="verify-btn">Verify</button>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            </div>
+        </div>
+        <script>
+            const closeBtn = document.getElementById("closePopup");
+            const popup = document.getElementById("popup");
+
+            closeBtn.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+        </script>
+</body>
+</html>

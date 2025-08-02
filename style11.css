@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
@@ -16,7 +12,7 @@ body {
 }
 
 .navbar {
-  background-color: #0f0c2e;
+  background-color: #1B1042;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +62,7 @@ body {
 .btn:hover {
   transform: scale(1.07);
   filter: contrast(100%);
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 .yellow-btn {
@@ -79,25 +75,8 @@ body {
   background: transparent;
   color: white;
   font-weight: 500;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-  transition: color 0.2s ease;
-}
-
-.white-btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3.5px;
-  width: 0;
-  background-color: white;
-  transition: width 0.8s ease;
-}
-
-.white-btn:hover::after {
-  width: 100%;
+  /* text-decoration: underline white; */
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -129,6 +108,7 @@ body {
 
 }
 
+/* Info Bar */
 .info-bar {
   background-color: #ffd700;
   color: #1B1042;
@@ -295,17 +275,16 @@ body {
 }
 
 .about-text p1{
-  font-size: 25px;
+  font-size: 22px;
   text-decoration: underline;
   margin-bottom: 20px;
   color: black;
   margin-top: 0px;
   font-weight: bold;
-  /* font-family: 'Abril Fatface', cursive; */
-  font-family: 'Fira Sans';
+  font-family: 'Abril Fatface', cursive;
   padding: 10px 10px 10px 10px;
 
-  /* background-image: url('BG2.jpeg'); */
+  background-image: url('BG2.jpeg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -314,8 +293,7 @@ body {
 .about-text p{
   font-size: 18px;
   line-height: 1.6;
-  color: #000000;
-  font-family: 'Abril Fatface', cursive;
+  color: #333;
 }
 
 .vision-mission h3 {
@@ -325,10 +303,9 @@ body {
 }
 
 .vision-mission p {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.6;
-  color: #000000;
-  font-family: 'Abril Fatface', cursive;
+  color: #333;
 }
 
 /* Responsive Design */
@@ -850,179 +827,4 @@ hr {
     font-size: 14px;
     justify-content: center;
   }
-}
-
-/* ===================== */
-/* Form - Get Free Demo */
-/* ===================== */
-
-.form-container {
-  background-color: #16C47F;
-  padding: 2rem;
-  border: 1px solid #000;
-  width: 300px;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-.form-container h2 {
-  background-color: white;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  border: 1px solid #000;
-}
-
-.form-container input {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #000;
-  box-sizing: border-box;
-}
-
-.otp-btn {
-  /* background-color: #ff0000; */
-  padding: 0.5rem 1rem;
-  border: 1px solid #000;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.otp-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.otp-row input {
-  flex: 1;
-}
-
-.verify-btn {
-  /* background-color: #ff0000; */
-  border: 1px solid #000;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.submit-btn {
-  background-color: #09ff2a;
-  color: white;
-  width: 100%;
-  padding: 0.7rem;
-  border: 1px solid #000;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.form-container {
-  background-color: #FFFBDE;
-  padding: 2rem;
-  border: 1px solid #000;
-  width: 300px;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  position: relative;
-}
-
-.form-container h2 {
-  background-color: #096B68;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  border: 1px solid #000;
-  color: white;
-}
-
-.form-container input {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #000;
-  box-sizing: border-box;
-}
-
-.otp-btn {
-  background-color: #90D1CA;
-  padding: 0.5rem 1rem;
-  border: 1px solid #000;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  display: block;
-  color: black;
-}
-
-.otp-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.otp-row input {
-  flex: 1;
-}
-
-.verify-btn {
-  background-color: #90D1CA;
-  border: 1px solid #000;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  color: black;
-  font-size: 0.85rem;         /* Slightly smaller font */
-  line-height: 1;             /* Prevent extra height */
-  height: auto;               /* Ensure it's not constrained */
-  margin-bottom: 1rem;
-}
-
-.submit-btn {
-  background-color: #129990;
-  color: white;
-  width: 100%;
-  padding: 0.7rem;
-  border: 1px solid #000;
-  cursor: pointer;
-  font-weight: bold;
-  color: white;
-  font-size: 18px;
-}
-
-/* Fullscreen overlay to center the form and blur background */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(6px);
-  background-color: rgba(0, 0, 0, 0.2); /* slight dark overlay */
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  display: none;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000;
-  cursor: pointer;
-  background: rgb(255, 77, 77);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 28px;
-  border: 1px solid #000;
 }
