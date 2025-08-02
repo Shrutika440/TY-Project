@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
@@ -12,7 +16,7 @@ body {
 }
 
 .navbar {
-  background-color: #1B1042;
+  background-color: #0f0c2e;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,7 +66,7 @@ body {
 .btn:hover {
   transform: scale(1.07);
   filter: contrast(100%);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .yellow-btn {
@@ -75,8 +79,25 @@ body {
   background: transparent;
   color: white;
   font-weight: 500;
-  /* text-decoration: underline white; */
-  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: color 0.2s ease;
+}
+
+.white-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3.5px;
+  width: 0;
+  background-color: white;
+  transition: width 0.8s ease;
+}
+
+.white-btn:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -240,16 +261,17 @@ body {
 }
 
 .about-text p1{
-  font-size: 22px;
+  font-size: 25px;
   text-decoration: underline;
   margin-bottom: 20px;
   color: black;
   margin-top: 0px;
   font-weight: bold;
-  font-family: 'Abril Fatface', cursive;
+  /* font-family: 'Abril Fatface', cursive; */
+  font-family: 'Fira Sans';
   padding: 10px 10px 10px 10px;
 
-  background-image: url('BG2.jpeg'); /* Replace with your image path */
+  /* background-image: url('BG2.jpeg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,7 +280,8 @@ body {
 .about-text p{
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #000000;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .vision-mission h3 {
@@ -268,9 +291,10 @@ body {
 }
 
 .vision-mission p {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.6;
-  color: #333;
+  color: #000000;
+  font-family: 'Abril Fatface', cursive;
 }
 
 /* Responsive Design */
